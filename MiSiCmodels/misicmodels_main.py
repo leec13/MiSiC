@@ -6,8 +6,8 @@ import os
 from tqdm import tqdm
 from skimage.io import imread,imsave
 
-from MiSiC.utils import *
-from MiSiC.MiSiC import *
+from MiSiCmodels.utils import *
+from MiSiCmodels.MiSiCmodels import *
 
 import warnings
 
@@ -57,7 +57,7 @@ def main():
     
     ## load model
     print('loading model ... ')
-    misic = MiSiC()
+    misic = MiSiCmodels()
     print('model ready.')    
 
     ## batch processing    

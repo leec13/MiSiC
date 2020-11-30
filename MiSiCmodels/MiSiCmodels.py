@@ -8,7 +8,7 @@ from skimage.io import imread,imsave
 from skimage.filters import gaussian, laplace, threshold_otsu, median
 from skimage.feature import shape_index
 from skimage.feature import hessian_matrix, hessian_matrix_eigvals
-from MiSiC.utils import *
+from MiSiCmodels.utils import *
 from scipy.ndimage import gaussian_laplace
 
 
@@ -31,7 +31,7 @@ def post_processing(y,orig_size):
     return resize(y[:,:,0],orig_size) >0.90
     
 
-class MiSiC():
+class MiSiCmodels():
     def __init__(self):
         self.size = 256
         model_path = get_file(
